@@ -1,9 +1,12 @@
-import { useState } from "react";
-import { useIsMounted } from "./useIsMounted";
+import { useEffect, useState } from "react";
 
 export const useCountdown = (seconds: number = 59): useCountdownType => {
   const [timeLeft, setTimeLeft] = useState<number>(seconds);
-  const isMounted = useIsMounted();
+  const [isMounted, setIsMounted] = useState<boolean>(true);
+
+  useEffect(() => {
+    return () => setIsMounted(false);
+  });
 
   let interval: any = null;
   let intervalCounter = seconds;

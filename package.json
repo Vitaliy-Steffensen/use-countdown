@@ -1,14 +1,24 @@
 {
-  "name": "use-countdown",
-  "version": "1.0.0",
+  "name": "use-countdown-ts",
+  "version": "1.0.19",
   "description": "none",
-  "main": "useCountdown.ts",
+  "main": "index.ts",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [
-    "countdown"
+    "countdown",
+    "timer"
   ],
+  "repository": {
+    "url": "https://github.com/Vitaliy-Steffensen/use-countdown"
+  },
   "author": "vitaliy",
-  "license": "ISC"
+  "license": "ISC",
+  "peerDependencies": {
+    "react": "^17.0.2",
+    "react-dom": "^17.0.2",
+    "typescript": "^4.6.3"
+  },
+  "types": "@types/index.d.ts"
 }

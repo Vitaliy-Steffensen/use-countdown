@@ -1,4 +1,4 @@
-import { useCountdown } from "../useCountdown";
+import { useCountdown } from "../useCountdown.js";
 
 test("Return text in correct format", () => {
   const { startCountdown, timeLeft, onTimerEnds } = useCountdown(60);
